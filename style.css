@@ -14,29 +14,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
+    /* 背景透明化 */
     background-color: rgb(214, 214, 214);
+    /* 邊框透明化     */
     border: 2px solid rgb(170, 170, 170);
+    /* 邊框圓角     */
     border-radius: 25px;
     width: 20rem;
-    margin: auto;
-    border-radius: 25px;
-    /*  運用到box-shadow和transition  */
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
-    transition: 0.4s;
-    margin-bottom: 1.3rem;
+    /*  卡片陰影  */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
 }
 
 .card:hover {
-    background-color: rgb(255, 255, 255);
-    /*  hover之後，改變陰影和位移，就可以做出漂浮效果  */
-    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.3);
+    /* 將顏色改為白色，增加 hover 差異效果 */
+    background-color: #fff;
+    /*  hover 之後，增加陰影面積和位移幅度，就可以做出漂浮效果  */
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
     transform: translate(-5px, -5px);
 }
